@@ -85,7 +85,6 @@ button {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 700;
-  line-height: 1.16;
   letter-spacing: 0.03em;
   line-height: 1.17;
   text-transform: uppercase;
@@ -135,7 +134,8 @@ address {
   color: #404bbf;
 }
 
-.menu-link::after {
+.menu-link:hover::after,
+.menu-link:focus::after {
   display: block;
   width: 100%;
   content: "";
@@ -162,7 +162,6 @@ address {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1440px;
 }
 
 .main-title {
@@ -304,7 +303,6 @@ address {
 }
 
 .our-team-list-title {
-  text-align: center;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
@@ -322,6 +320,7 @@ address {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .our-team-list-item {
@@ -332,7 +331,6 @@ address {
   display: flex;
   gap: 24px;
   justify-content: center;
-  padding-bottom: 32px;
 }
 
 .social-media-list-item {
