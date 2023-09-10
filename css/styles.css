@@ -142,6 +142,7 @@ address {
   position: absolute;
   left: 0;
   top: 44px;
+  bottom: -1px;
   height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
