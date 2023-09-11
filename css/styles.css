@@ -60,7 +60,6 @@ button {
 .page-header-container {
   display: flex;
   width: 1158px;
-  height: 72px;
   justify-content: space-between;
   align-items: center;
 }
@@ -106,14 +105,16 @@ address {
 }
 
 .menu-link {
-  width: max-content;
-  color: #404bbf; 
+  color: #2E2F42; 
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .contacts-list-link {
@@ -135,13 +136,16 @@ address {
   color: #404bbf;
 }
 
-.menu-link::after {
+.current {
+  color: #404bbf;
+}
+
+.current::after {
   display: block;
   width: 100%;
   content: "";
   position: absolute;
   left: 0;
-  top: 44px;
   bottom: -1px;
   height: 4px;
   background-color: #404bbf;
@@ -164,10 +168,7 @@ address {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-.hero-container {
-  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .main-title {
@@ -407,6 +408,7 @@ address {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
+  font-weight: 700;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
