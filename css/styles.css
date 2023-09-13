@@ -602,6 +602,7 @@ address {
   fill: #ffffff;
 }
 
+/* MODAL FORM */
 .contact-form-description {
   color: #2e2f42;
   text-align: center;
@@ -610,4 +611,127 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-top: 48px;
+  margin-bottom: 8px;
+}
+
+.contactt-form-field-wrapper {
+  margin-top: 8px;
+}
+
+.contact-form-field-label {
+  display: block;
+  margin-bottom: 4px;
+  color: #8e8f99;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+
+.contact-form-input-wrapper {
+  position: relative;
+}
+
+.contact-form-field-input {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-left: 38px;
+}
+
+.contact-form-field-input:focus {
+  border-color: #4d5ae5;
+  outline: transparent;
+}
+
+.contact-form-field-icon {
+  fill: #2e2f42;
+  position: absolute;
+  top: 11px;
+  left: 16px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.phone-icon,
+.email-icon {
+  top: 8px;
+}
+
+.contact-form-field-input:focus + .contact-form-field-icon {
+  fill: #4d5ae5;
+}
+
+.contact-form-comment {
+  width: 360px;
+  height: 120px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  padding: 8px 16px;
+  resize: none;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form-comment::placeholder {
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.contact-form-comment:focus {
+  border-color: #4d5ae5;
+  outline: transparent;
+}
+
+.contact-form-checkbox-wrapper {
+  margin-top: 16px;
+}
+
+.contact-form-own-cheeckbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  cursor: pointer;
+}
+
+.contact-form-checkbox-label {
+  color: #8e8f99;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17px;
+  letter-spacing: 0.04em;
+}
+
+.contact-form-privacy-link {
+  color: #4d5ae5;
+}
+
+.contact-form-submit {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background-color: #4d5ae5;
+  padding: 16px 32px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form-submit:hover,
+.contact-form-submit:focus {
+  background-color: #404bbf;
 }
