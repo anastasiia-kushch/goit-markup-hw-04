@@ -417,6 +417,7 @@ img {
   padding: 40px 32px;
 
   background-color: var(--primary-brand-cl);
+  color: var(--light-cl);
 
   transform: translateY(100%);
   transition: var(--trns);
@@ -443,7 +444,7 @@ img {
   align-items: baseline;
 }
 
-.socials {
+.footer-logo-wrapper {
   margin-right: 120px;
 }
 
